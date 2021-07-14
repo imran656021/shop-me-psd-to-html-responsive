@@ -1,0 +1,28 @@
+<div class="product-details-carousel owl-carousel owl-theme ">
+    <div class="item ">
+        <img src="./images/brand2.jpg " alt=" ">
+    </div>
+    <div class="item ">
+        <img src="./images/brand2.jpg " alt=" ">
+    </div>
+    <div class="item ">
+        <img src="./images/brand2.jpg " alt=" ">
+    </div>
+    <div class="item ">
+        <img src="./images/brand2.jpg " alt=" ">
+    </div>
+    <div class="item ">
+        <img src="./images/brand2.jpg " alt=" ">
+    </div>
+</div>
+<div class="owl-controls ">
+    <span class="pD-prv "><i class="fa fa-chevron-left " aria-hidden="true "></i></span>
+    <span class="pD-nxt "><i class="fa fa-chevron-right " aria-hidden="true "></i></span>
+</div>
+
+var pDCarousel = $('.product-details-carousel'); pDCarousel.owlCarousel({ loop: true, // margin: 20, nav: false, autoplay: false, // stagePadding: 50, dots: false, center: true, autoplayTimeout: 1000, responsiveClass: true, responsive: { 0: { items: 1
+}, 600: { items: 1 }, 1000: { items: 1 } } }) $('.pD-nxt').click(function() { pDCarousel.trigger('next.owl.carousel'); }) // Go to the previous item $('.pD-prv').click(function() { pDCarousel.trigger('prev.owl.carousel'); })
+
+<!-- css -->
+.product-content-slider .owl-controls { position: absolute; top: -25px; right: 0; } .product-content-slider .owl-controls span { color: red; background: #fff; padding: 5px; cursor: pointer; } .product-content-slider .owl-controls span:hover { background:
+#018bc8; color: #fff; }
